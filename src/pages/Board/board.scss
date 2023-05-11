@@ -1,0 +1,75 @@
+$btnBgColor: #424141be;
+$hoverBtn: #ffffff52;
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.board {
+  background: repeat center center url('../../imgs/descBack.jpg');
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 0;
+  position: relative;
+  transition: margin .1s ease-in;
+
+  .boardHeader{
+    max-width: 400px;
+    height: 32px;
+    padding: 0 12px;
+    margin: 4px auto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;    
+    color: #fff;
+    background-color: $btnBgColor;    
+    border-radius: 3px;    
+    text-align: center;
+    &:hover {
+     background-color:  $hoverBtn;
+    }
+  }
+
+  .boardWorkPlace{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;  
+  }
+
+  .boardAddBtn {
+    cursor: pointer;
+    border-radius: 3px;
+    height: auto;
+    max-height: 50px;
+    min-height: 32px;
+    max-width: 50px;
+    color: #fff;
+    background-color: $btnBgColor;
+    padding: 4px;  
+    &:hover{
+      background-color:  $hoverBtn;
+    } 
+  }
+  
+  .boardHomeBtn {
+    background-color: $btnBgColor;
+    &:hover{
+      background-color:  $hoverBtn;
+    } 
+    padding: 4px; 
+    max-height: 50px;
+    min-height: 32px;
+    width: 100px;
+    cursor: pointer;
+    color: #fff;
+    margin: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
